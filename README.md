@@ -14,5 +14,6 @@ appropriate key can decrypt them, which the service implemented here can do, and
 a normal local synchronized directory then exists for the user, which he can use
 as usual.
 
-Concurrent accesses are handled very simply -- whoever writes last wins. If the
-service or the mail account is not accessible, all files are write-protected.
+Concurrent accesses are handled very simply -- whoever writes last wins.
+
+If the service or the mail account is not accessible, all files are read-only.
