@@ -14,3 +14,10 @@ synchronization pauses and resumes when the repository is available again.
 Managing changes and versions is a very complex issue, which was solved very
 simply. Like in the local file system -- who writes last wins. There is no
 merging and there are no locks.
+
+__Use case and limits__
+Transferring data takes time and bandwidth. Planned is the in the background
+active service for small amounts of data -- like notes, bookmarks, certificates,
+...
+
+Everything you miss locally when a network solution is not available.
