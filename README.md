@@ -1,19 +1,15 @@
 # Description
-Looking for a free and secure network drive to store personal data across
-devices on the Internet, I was not convinced by many things. The locations of
-the data centers, unclear data protection and security, poor performance...
-Powerful mailboxes with IMAP support are easier to find. And so the idea was
-born to implement a shared and fully encrypted network drive based on IMAP.
+To use local files that are continuously synchronized over a network with several
+computers and that almost in real time -- so the goal. 
 
-For Windows, the project provides a corresponding service that is configured for
-a directory on the local PC and a mail account. The service creates an
-additional directory in the mail account, in which all files and directories of
-the local directory are synchronized. The file contents as well as the meta data
-are stored completely encrypted in the mail account. Only the client(s) with the
-appropriate key can decrypt them, which the service implemented here can do, and
-a normal local synchronized directory then exists for the user, which he can use
-as usual.
+Micro-File-Exchange is a small service for Windows that does this. Local
+directories are declared as workspaces, to which directories on network drives
+are assigned as repositories. 
 
-Concurrent accesses are handled very simply -- whoever writes last wins.
+Locally, a synchronized copy of the data from the repository is always used.
+Therefore, it is not a problem if the repository is not available. Then the
+synchronization pauses and resumes when the repository is available again.   
 
-If the service or the mail account is not accessible, all files are read-only.
+Managing changes and versions is a very complex issue, which was solved very
+simply. Like in the local file system -- who writes last wins. There is no
+merging and there are no locks.
