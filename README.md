@@ -17,8 +17,8 @@ merging and there are no locks.
 
 ## Use case and limits
 
-Transferring data takes time and bandwidth. Planned is the in the background
-active service for small amounts of data -- like notes, bookmarks, certificates,
-...
+Transferring data takes time and bandwidth.  
+Planned is the in the background active service for small amounts of data --
+like notes, bookmarks, certificates, ...
 
 Everything you miss locally when a network solution is not available.
