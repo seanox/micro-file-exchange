@@ -4,7 +4,8 @@ computers and that almost in real time -- so the goal.
 
 Micro-File-Exchange is a small service for Windows that does this. Local
 directories are declared as workspaces, to which directories on network drives
-are assigned as repositories. 
+are assigned as repositories. Or more simply, directory pairs are defined, which
+are then continuously synchronized recursively.
 
 Locally, a synchronized copy of the data from the repository is always used.
 Therefore, it is not a problem if the repository is not available. Then the
