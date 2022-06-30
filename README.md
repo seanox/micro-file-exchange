@@ -16,6 +16,7 @@ simply. Like in the local file system -- who writes last wins. There is no
 merging and there are no locks.
 
 __Use case and limits__
+
 Transferring data takes time and bandwidth. Planned is the in the background
 active service for small amounts of data -- like notes, bookmarks, certificates,
 ...
