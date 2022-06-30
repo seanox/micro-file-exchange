@@ -15,7 +15,7 @@ Managing changes and versions is a very complex issue, which was solved very
 simply. Like in the local file system -- who writes last wins. There is no
 merging and there are no locks.
 
-__Use case and limits__
+## Use case and limits
 
 Transferring data takes time and bandwidth. Planned is the in the background
 active service for small amounts of data -- like notes, bookmarks, certificates,
